@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+</head>
+<body>
+
+    <div style="margin-bottom: 20px;">
+        <h1>Welcome to Memory Game </h1>
+        <p><i>score calculation: +3 for correct pair, -1 for wrong pair</i></p>
+    </div>
+
+    <div class="player_score">
+        <h2 style="margin-right: 80px;"> <span id="firstPlayer">Player1 </span>'s Score: <span id="result1">0</span></h2>
+        <h2> <span id="secondPlayer">Player2 </span>'s Score: <span id="result2">0</span></h2>
+    </div>
+
+    <section class="enter_playerName_class open">
+        <div style="display: flex;">
+            <h2>Enter Player1's name: </h2>
+            <input type="text" id="player1Name">
+        </div>
+    
+        <div style="display: flex;">
+            <h2>Enter Player2's name: </h2>
+            <input type="text" id="player2Name">
+        </div>
+
+        <div style="display: flex; justify-content: center;">
+            <button id="play-game">Play Game</button>
+        </div>
+    </section>
+
+    <div id="grid" class="">
+    </div>
+
+</body>
+<script src="app.js" charset="UTF-8"></script>
+</html>
